@@ -38,3 +38,10 @@ console.log(average(1, 3, 6, 6));
 // task 4
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
 console.log(average.apply(undefined, grades));
+
+// task 5
+var weirdArray = [1, 4, 'Iwona', false, 'Nowak'];
+var firstName = weirdArray[2],
+    lastName = weirdArray[4];
+
+console.log(firstName + ' ' + lastName);
