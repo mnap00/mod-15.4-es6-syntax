@@ -1,0 +1,22 @@
+{
+  "name": "es6-syntax",
+  "version": "0.4.0",
+  "description": "ES6 - new syntax",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel src --watch --out-dir lib",
+    "watch": "browser-sync start --server --files '*.css' 'css/*.css' '*.html' '*.js' 'lib/*.js lib/*/*.js"
+  },
+  "keywords": [
+    "syntax",
+    "es6"
+  ],
+  "author": "mnap00",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6"
+  }
+}
