@@ -5,8 +5,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel src --watch --out-dir lib",
-    "watch": "browser-sync start --server --files '*.css' 'css/*.css' '*.html' '*.js' 'lib/*.js lib/*/*.js"
+    "start": "babel src/js --watch --out-dir ./",
+    "watch": "browser-sync start --server --files '*.css' 'css/*.css' '*.html' '*.js' 'components/*.js'"
   },
   "keywords": [
     "syntax",
