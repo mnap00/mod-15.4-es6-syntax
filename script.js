@@ -10,10 +10,27 @@ console.log(a + ' ' + b + '!');
 
 // task 2
 var multiply = function multiply() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-  return a * b;
+    var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+    var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+    return a * b;
 };
 console.log(multiply(2, 5));
 console.log(multiply(6, 6));
 console.log(multiply(5));
+
+// task 3
+//const average = (...args) => args.reduce((a, b) => a + b, 0) / args.length;
+var average = function average() {
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+    }
+
+    var sum = 0;
+    args.forEach(function (arg) {
+        return sum += arg;
+    });
+    return sum / args.length;
+};
+console.log(average(1));
+console.log(average(1, 3));
+console.log(average(1, 3, 6, 6));
